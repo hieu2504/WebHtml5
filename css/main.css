@@ -1,0 +1,185 @@
+:root{
+    --color-primary:#000;
+    --color-secondary:#ca1f1f;
+    --color-primary-hover:#999999;
+    --color-light:rgb(255, 255, 255);
+    --color-text-latest-span:#666666;
+    --color-introduce:#e5e5e5;
+    --font--primary: 'Roboto', sans-serif;
+    --font--secondary: 'Open Sans', sans-serif;
+}
+body{
+    font-family: var(--font--primary);
+}
+.container{
+ max-width: 960px;
+ margin:0 auto;
+}
+header>.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    align-items: center;
+}
+.main-nav__list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px 0px 0px;
+    padding: 0px;
+}
+.main-nav__item{
+  list-style: none;
+  margin: 0 5px;
+}
+.main-nav__item::after{
+  content: '/';
+  display: inline-block;
+  margin-left: 5px;
+}
+.main-nav__item:last-child::after{
+    display: none;
+}
+.main-nav__link{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+.main-nav__link:hover{
+    color: var(--color-primary-hover);
+}
+/* Banner */
+.section.banner{
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-top-color: #999999;
+  border-bottom-color: #999999;
+  text-align: center;
+}
+.section.banner>.container>h2{
+    padding: 102px 0 20px; 
+    font-size: 2.25rem;
+    color: var(--color-primary);
+}
+.section.banner>.container>p{
+    font-size: 1rem;
+    color: var(--color-primary);
+}
+.section.banner>.container>button{
+    background-color: var(--color-primary);
+    padding: 10px 40px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 40px 0px 100px;
+}
+.section.banner>.container>button>a{
+    color: var(--color-light);
+    text-decoration: none;
+}
+/* My latest project */
+.section-heading__title{
+    color: var(--color-primary);
+    font-size: 1.875rem;
+    padding: 35px 0px 10px;
+}
+.section.latest-project>.container>.section-body>.row{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.section.latest-project>.container>.section-body>.row>.col{
+    text-align: center;
+    border: 1px solid;
+    border-color: #cccccc;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 100px;
+}
+.latest-item__type{
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: var(--color-primary);
+}
+.latest-item__img>span{
+    color: var(--color-text-latest-span);
+    font-style: italic;
+    padding-bottom: 20px;
+    display: inline-block;
+    
+}
+/* introduc */
+.section.introduce{
+    background-color: var(--color-introduce);
+}
+.section.introduce>.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.about-me-item>p{
+    color: #444444;
+    font-size: 0.82rem;
+    padding: 10px 0px 0px;
+    font-family: var(--font--secondary);
+}
+.about-me-icon{
+    padding:10px 0px 60px;
+}
+.section.what-new>.section-body>.section-item>.row{
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    padding: 10px 0 10px 0;
+}
+.section.what-new>.section-body>.section-item>.row>.col>.section-item__type>h4{
+    margin: 0px;padding: 0px;
+}
+.section.what-new>.section-body>.section-item>.row>.col>.section-item__type>label{
+   color: #ca1f1f;
+}
+.section.what-new>.section-body>.section-item>.row>.col>.section-item__type>span{
+    color: #666666;
+    padding-bottom: 10px;
+ }
+footer>.container{
+    padding-bottom: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.main-nav__linkf{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+.main-nav__linkf:hover{
+    color: #099999;
+}
+i{
+    font-size: 40px;
+}
+
+@media(min-width: 576px){
+    header{
+        background: green;
+    }
+}
+@media(min-width: 768px){
+    header{
+        background: green;
+    }
+}
+@media(min-width: 992px){
+    header{
+        background: green;
+    }
+}
+@media(min-width: 1024px){
+    .section.latest-project>.container>.section-body>.row{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    
+    }
+    .section.introduce>.container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+}
+
