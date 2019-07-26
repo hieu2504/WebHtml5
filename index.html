@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto:400,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/main.css">
 
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -25,7 +28,7 @@
                     <li class="main-nav__item"><a class="main-nav__link" href="">about me</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="">contact me</a></li>
                 </ul>
-                
+
 
             </nav>
 
@@ -34,16 +37,34 @@
 
         </div>
     </header>
-    <section class="section banner">
-        <div class="container">
-            <h2>I’m a Graphic / Web Designer based in Philippines</h2>
-            <p>This is Photoshop's version of Lorem Ipsum.
-                Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum <br> auctor,
-                nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
-            <Button><a href="#">Hire Me</a></Button>
+    <section class="flexslider section banner">
+        <ul class="slides">
+            <li>
+                <div class="container">
+                    <h2>I’m a Graphic / Web Designer based in Philippines</h2>
+                    <p>This is Photoshop's version of Lorem Ipsum.
+                        Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum <br>
+                        auctor,
+                        nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+                    <Button><a href="#">Hire Me</a></Button>
 
-        </div>
+                </div>
+            </li>
+            <li>
+                <div class="container">
+                    <h2>I’m a Graphic / Web Designer based in Philippines</h2>
+                    <p>This is Photoshop's version of Lorem Ipsum.
+                        Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum <br>
+                        auctor,
+                        nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+                    <Button><a href="#">Hire Me</a></Button>
+
+                </div>
+            </li>
+        </ul>
+
     </section>
+
     <section class="section latest-project">
         <div class="container">
             <div class="section-heading">
@@ -103,14 +124,14 @@
                 <div class="section-body">
                     <div class="about-me-item">
                         <p>
-                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel 
-                            velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, 
+                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                            velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
                             nisi elit consequat ipsum,nec sagittis sem nibh id elit.
                         </p>
                         <p>
-                            Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae 
-                            erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora 
-                            torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. 
+                            Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
+                            erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora
+                            torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.
                             Nullam ac urna eu felis dapibus condimentum sit amet a augue.
                         </p>
                         <div class="about-me-icon">
@@ -185,7 +206,16 @@
             </nav>
         </div>
     </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script>
+        // Can also be used with $(document).ready()
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        });
+    </script>
 </body>
 
 </html>

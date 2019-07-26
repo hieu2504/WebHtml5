@@ -45,30 +45,32 @@ header>.container{
     color: var(--color-primary-hover);
 }
 /* Banner */
-.section.banner{
+.flexslider.section.banner{
+    padding-top: 100px;
   border-top: 1px solid;
   border-bottom: 1px solid;
   border-top-color: #999999;
   border-bottom-color: #999999;
   text-align: center;
+  overflow: hidden;
 }
-.section.banner>.container>h2{
+.flexslider.section.banner>.slides>li>.container>h2{
     padding: 102px 0 20px; 
     font-size: 2.25rem;
     color: var(--color-primary);
 }
-.section.banner>.container>p{
+.flexslider.section.banner>.slides>li>.container>p{
     font-size: 1rem;
     color: var(--color-primary);
 }
-.section.banner>.container>button{
+button{
     background-color: var(--color-primary);
     padding: 10px 40px;
     border-radius: 5px;
     display: inline-block;
     margin: 40px 0px 100px;
 }
-.section.banner>.container>button>a{
+a{
     color: var(--color-light);
     text-decoration: none;
 }
@@ -171,7 +173,7 @@ i{
 }
 @media(min-width: 1024px){
     .section.latest-project>.container>.section-body>.row{
-        display: grid;
+        display: gr id;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 30px;
     
@@ -199,5 +201,10 @@ i{
         display: flex;
         justify-content: space-between;
     }
+    img{
+        object-fit: contain;
+        width: 100%;
+    }
 }
+
 
