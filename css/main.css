@@ -167,11 +167,12 @@ i{
     }
 }
 @media(min-width: 992px){
+    
+}
+@media(min-width: 1024px){
     header{
         background: white;
     }
-}
-@media(min-width: 1024px){
     .section.latest-project>.container>.section-body>.row{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
