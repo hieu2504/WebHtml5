@@ -168,12 +168,12 @@ i{
 }
 @media(min-width: 992px){
     header{
-        background: gray;
+        background: white;
     }
 }
 @media(min-width: 1024px){
     .section.latest-project>.container>.section-body>.row{
-        display: gr id;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 30px;
     
